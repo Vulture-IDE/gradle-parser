@@ -22,7 +22,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build with Gradle
-        run: ./gradlew clean && ./gradlew shadowJar
+        run: ./gradlew clean && ./gradlew assemble
 
       - name: Upload release gradle-parser
         uses: actions/upload-artifact@v4
