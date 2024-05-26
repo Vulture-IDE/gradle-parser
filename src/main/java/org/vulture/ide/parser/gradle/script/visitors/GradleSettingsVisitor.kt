@@ -8,7 +8,7 @@ import org.vulture.ide.parser.gradle.models.GradleSettings.Include
 
 class GradleSettingsVisitor : CodeVisitorSupport() {
 
-  private lateinit var rootProjectName: String
+  private var rootProjectName: String? = null
   private val includes = mutableListOf<Include>()
 
   override fun visitBinaryExpression(binaryExpression: BinaryExpression) {
