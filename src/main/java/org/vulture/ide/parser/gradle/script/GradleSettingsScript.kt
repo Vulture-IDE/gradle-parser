@@ -29,7 +29,7 @@ class GradleSettingsScript(val settings_file: File) {
     try {
       val compilePhase = CompilePhase.CANONICALIZATION
       val cu = CompilationUnit(CompilerConfiguration.DEFAULT)
-      cu.addSource(name, text)
+      cu.addSource(settings_file)
       cu.compile(compilePhase.phaseNumber)
 
       val astNodes = mutableListOf<ASTNode>()

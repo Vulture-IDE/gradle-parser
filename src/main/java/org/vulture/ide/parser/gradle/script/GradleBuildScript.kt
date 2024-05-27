@@ -29,7 +29,7 @@ class GradleBuildScript(val build_file: File) {
     try {
       val compilePhase = CompilePhase.CANONICALIZATION
       val cu = CompilationUnit(CompilerConfiguration.DEFAULT)
-      cu.addSource(name, text)
+      cu.addSource(build_file)
       cu.compile(compilePhase.phaseNumber)
 
       val astNodes = mutableListOf<ASTNode>()
