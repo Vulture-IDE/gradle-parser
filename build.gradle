@@ -19,7 +19,7 @@ java {
 }
 	
 dependencies {
-    implementation 'com.github.Vulture-IDE:groovy:3.0.7-grooid'	
+    implementation 'com.github.Vulture-IDE:groovy:main-SNAPSHOT'	
 }
 
 publishing {
